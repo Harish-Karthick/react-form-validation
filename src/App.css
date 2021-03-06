@@ -1,38 +1,47 @@
-.App {
+.form-container {
+  width: 90%;
+  max-width: 400px;
+  margin: 2rem auto;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.form-group {
+  padding: 1rem 0 0;
+  margin: 0 1rem;
+}
+.control-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+.form-control {
+  display: block;
+  width: calc(100% - 20px);
+  font-size: 16px;
+  line-height: 19px;
+  padding: 4px 8px;
+  border-radius: 0;
+  outline: none;
+  box-shadow: none;
+  border: 1px solid rgba(99, 99, 99, 0.2);
+}
+.form-error {
+  margin: 0.5rem 0 0;
+  font-size: 14px;
+  color: #ef4444;
+}
+.button-container {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-button {
+  display: inline-block;
+  margin: 2rem auto 1rem;
+  padding: 0.25rem 1.25rem;
+  font-weight: 500;
+  background-color: #6ee7b7;
+  border: 1px solid #6ee7b7;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-button:hover {
+  background-color: #34d399;
 }
